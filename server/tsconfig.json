@@ -1,0 +1,22 @@
+{
+    "compilerOptions": {
+      "target": "ES6",                    // You can set to ES6 or ESNext
+      "module": "commonjs",                // Use CommonJS modules for Node.js
+      "outDir": "./dist",                  // Transpiled JS files will go to dist/
+      "rootDir": "./",                     // Source directory for TS files
+      "esModuleInterop": true,             // Ensure compatibility with ES6 imports
+      "strict": true,                      // Enable strict type checking
+      "skipLibCheck": true                 // Skip type checking for declaration files
+    },
+    "include": [
+      "index.ts",                          // Include the main entry point (e.g., index.ts)
+      "models/**/*",                       // Include all files in models
+      "controllers/**/*",                  // Include all files in controllers
+      "routes/**/*",                       // Include all files in routes
+      "middleware/**/*"                    // Include all middleware files
+    ],
+    "exclude": [
+      "node_modules"                       // Exclude the node_modules directory
+    ]
+  }
+  
